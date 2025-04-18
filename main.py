@@ -52,7 +52,7 @@ history = model.fit(X_train, y_train, epochs=10, batch_size=32, validation_split
 # 7. Modell speichern
 model_dir = "gold_lstm_model"
 os.makedirs(model_dir, exist_ok=True)
-model_path = os.path.join(model_dir, "model.h5")
+model_path = os.path.join(model_dir, "model.keras")
 model.save(model_path)
 
 # Modell optional laden
